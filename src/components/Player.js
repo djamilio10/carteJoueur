@@ -4,6 +4,8 @@ import Card from "react-bootstrap/Card";
 const Player = ({ nom, equipe, nationalite, numeroMaillot, age, image }) => {
   return (
     <Card className="card-hover" style={{ width: "18rem" }}>
+      {/* variant="top" : Cet attribut spécifie que l'image doit être affichée en haut de la carte. 
+        Cela signifie que l'image sera positionnée au-dessus du contenu de la carte. */}
       <Card.Img variant="top" src={image} alt={nom} />
       <Card.Body>
         <Card.Title>{nom}</Card.Title>
